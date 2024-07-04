@@ -4,39 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
+    <link rel="icon" href="Assets/logo.png">
+    <link rel="stylesheet" href="style/style.css">
+    <!--font awesome 5.15.4-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <!--Google Font Playwrite DE Grund-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
     <style>
-        body{
-            margin: 60px;
-        }
+body{
+    background-color: #92C7CF;
+}
 
-       footer{
-        text-align: center;
-       }
+.navigation{
+    width: 100%;
+    padding-block: 1rem;
+    margin-inline: auto;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #C4DFDF;
+    color: white;
+    
+}
+
+.navigation a{
+    padding-left: 0;
+    display: flex;
+    justify-content: right;
+    gap: 2rem 1rem;
+
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    border-style: double;
+    text-decoration: none;
+    font-size: 1.05;
+    font-weight: bolder;
+    color: #000000;
+    background-color: #C4DFDF;
+    border-color: #000000;
+    font-weight: bold;
+
+    transition: all 0.2s ease-in-out;
+}
+
+header a:hover{
+    background-color: #92C7CF;
+    color: #000000;
+    border-color: #000000;
+}
+
+header h1, h2{
+    text-align: center;
+    color: #FCF8F3;
+    font-weight: bold;
+    font-family: "Playwrite DE Grund";
+    font-size: 20px;
+}
+
+main{
+    padding: 1%;
+    background-color: #AAD7D9;
+    margin: 0;
+}
+
+.data{
+    white-space: nowrap;
+}
+
+.data img, .data p{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.data img{
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 10%;
+}
+
+.abtme h2{
+    color: #000000;
+}
+
+footer{
+    padding: 1%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 130%;
+}
     </style>
 </head>
 <body>
-    <header>
-        <h1>Zafran Aqeel A.A.</h1>
-        <div class="sosmed">
-            <a href="https://www.instagram.com/zfrn_6/?utm_source=ig_web_button_share_sheet"><img src="/Assets/Instagram.png" width="30px"></a>
-            <a href="mailto:zafranaaqeel62@gmail.com"><img src="/Assets/Mail.png" width="30px"></a>
-            <a href="https://github.com/Zafranaqeel"><img src="/Assets/GitHub.png" width="30px"></a>
+    <header><!--Navigation Bar-->
+        <div class="navigation">
+            <a href="https://www.instagram.com/azz_ips/?utm_source=ig_web_button_share_sheet"><i class="fab fa-instagram"> Instagram</i></a>
+            <a href="https://wa.me/6289526479678"><i class="fab fa-whatsapp"> Whatsapp</i></a>
+            <a href="mailto:azzips10@gmail.com"><i class="fa fa-envelope"> E-Mail</i></a>
+            <a href="https://github.com/Zafranaqeel"><i class="fab fa-github"> Github</i></a>
         </div>
+        <h1>
+            Hi!<br>I am Zafran Aqeel
+        </h1> 
+        <h2>Front End Developer<br>&<br>Website Penetration Tester</h2>
     </header>
-    <main>
-        <img src="/Assets/Pas Foto.png" width="100px">
-        <h2>Biodata</h2>
-        <h3>Zafran Aqeel</h3>
-        <pre>
-<strong>Age     : 15</strong>
-<strong>Address : Panorama</strong>
-<strong>Email   : zafranaqeel62@gmail.com</strong>
-<strong>Phone   : +62 812 3456 7890</strong>
-<strong>Website : <a href="https://github.com/Zafranaqeel">https://github.com/Zafranaqeel</a></strong>
-        </pre>
+
+    <main><!--Konten utama-->
+        <div class="data" >
+            <img src="Assets/pasfoto.jpg" alt="Pas Foto 3x4">
+            <p>
+                Nama Lengkap: Zafran Aqeel Azizi Agung <br>
+                Nomor Telepon: +62 895 2647 9678 <br>
+                Bahasa Yang Dikuasai: Bahasa Indonesia & Inggris <br>
+                Bahasa Pemrograman Yang Dikuasai: HTML, CSS <br>
+            </p>
+        </div>
+        <article class="abtme">
+            <h2>Tentang Saya</h2>
+            <p>
+                Nama saya adalah  Zafran Aqeel Azizi Agung. Saya dilahirkan pada 6 Februari 2009 di Kota Cirebon. Saya merupakan anak  sulung dari tiga bersaudara. Saat memasuki usia Sekolah Dasar saya bersekolahh di SDN 1 Karanganyar, Indramayu. Saya melanjutkan pendidikan di SMPN 2 Sindang Indramayu pada kelas 1 SMP dan melanjutkan pendidikan saya di SMPN 1 Lemahabang saat kelas 2 SMP hingga saya dinyatakan lulus dari SMP. Saat ini, saya sedang melanjutkan sekolah di SMAN 1 Lemahabang Cirebon.
+                Selama bersekolah di SMPN 1 Lemahabang, saya aktif dalam kegiatan pembelajaran dan Organisasi Pramuka. Selain belajar, semasa SMP saya juga menekuni beberapa keahlian. Diantaranya adalah mempelajari bahasa pemrograman sederhana, komputer dan jaringan, fotografi, dan editing video. Cita-cita saya adalah melanjutkan pendidikan di <a href="https://www.akmil.ac.id/">Akademi Militer</a> Magelang.
+            </p>
+        </article>
     </main>
+
     <footer>
-        &copy;zafranaqeel62
+        azzips10@gmail.com
     </footer>
 </body>
 </html>
