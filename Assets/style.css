@@ -121,3 +121,11 @@ header{
     object-fit:cover;
     width:100%;
 }
+.home-project{
+    display:flex;
+    flex-direction:row;
+    align-items:start;
+}
+.home a img{
+    width:100%;
+}
